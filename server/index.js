@@ -13,7 +13,8 @@ const domain = process.env.DOMAIN
 setupServer(app)
 setRoutes(app)
 setDB(app, () => {
-  app.listen(port, () => {
+  const server = app.listen(port, () => {
+    console.log(server.address())
     console.log(`Server running on : ${protocol}://${domain}:${port}/ in ${env} mode`)
   })
 })
