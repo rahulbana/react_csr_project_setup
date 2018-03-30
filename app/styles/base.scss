@@ -1,0 +1,28 @@
+/* stylelint-disable indentation */
+@font-face {
+  font-family: "Karla";
+  src: url("./fonts/Karla.eot");
+  src: url("./fonts/Karla.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Karla.woff2") format("woff2"),
+      url("./fonts/Karla.woff") format("woff"),
+      url("./fonts/Karla.ttf") format("truetype"),
+      url("./fonts/Karla.svg#Karla-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+/* stylelint-enable */
+
+html,
+body,
+#app {
+  /* stylelint-disable font-family-name-quotes */
+  font-family: "Karla", arial;
+  /* stylelint-enable */
+}
+
+$color-red: #fff;
+
+body {
+  background: $color-red;
+  color: red;
+}
