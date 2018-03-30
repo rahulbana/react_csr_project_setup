@@ -1,8 +1,6 @@
 #!/bin/bash
-export PROTOCOL=http
-export DOMAIN=localhost
-export NODE_ENV=development
-export PORT=2018
+source .env
+export $(cut -d= -f1 .env)
 
 if [ $NODE_ENV = "development" ]
 then

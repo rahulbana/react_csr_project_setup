@@ -1,5 +1,6 @@
 import express from 'express'
 import webpack from 'webpack'
+import bodyParser from 'body-parser'
 import webpackConfig from '../../webpack/webpack.config.dev.js'
 
 const webpackDevMid = require("webpack-dev-middleware")
@@ -8,7 +9,7 @@ const env = process.env.NODE_ENV
 const root = process.cwd()
 
 export function setupServer(app) {
-  //app.use(express.static('view'))
+  app.use(bodyParser.json())
   app.use(express.static('dist'))
   app.set('views', root + '/view')
   app.engine('html', require('ejs').renderFile)

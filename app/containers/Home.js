@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import checkboxchecked from '.././images/checkboxchecked.png'
 import Nav from './Nav'
 import { decrementCounter, incrementCounter } from '../actions/counter'
-import settings from '../config/settings.json'
 
 const Home = ({ counter,  decrementCounter,incrementCounter }) => {
   const addNum = () => {
