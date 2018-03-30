@@ -7,7 +7,6 @@ import { decrementCounter, incrementCounter } from '../actions/counter'
 import settings from '../config/settings.json'
 
 const Home = ({ counter,  decrementCounter,incrementCounter }) => {
-  console.log(settings)
   const addNum = () => {
     incrementCounter()
   }
